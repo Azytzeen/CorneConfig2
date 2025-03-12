@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,10 +69,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp F1    &kp F2       &kp F3         &kp F4   &kp F5       &kp LC(C_AC_COPY)  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp C_VOLUME_UP    &kp BSPC
-&kp LCTRL  &kp F6    &kp F7       &kp F8         &kp F9   &kp F10      &kp C_AC_PASTE     &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp C_VOLUME_DOWN  &kp PRINTSCREEN
-&kp LSHFT  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp F11      &kp C_AC_SEARCH    &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp K_MUTE         &kp K_CALCULATOR
-                                  &kp LGUI       &trans   &kp SPACE    &kp RET            &kp LEFT_SHIFT  &kp NUMBER_0
+&kp TAB    &kp F1    &kp F2       &kp F3         &kp F4   &kp F5       &copy            &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp C_VOLUME_UP    &kp BSPC
+&kp LCTRL  &kp F6    &kp F7       &kp F8         &kp F9   &kp F10      &paste           &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp C_VOLUME_DOWN  &kp PRINTSCREEN
+&kp LSHFT  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp F11      &kp C_AC_SEARCH  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp K_MUTE         &kp K_CALCULATOR
+                                  &kp LGUI       &trans   &kp SPACE    &kp RET          &kp LEFT_SHIFT  &kp NUMBER_0
             >;
         };
 
