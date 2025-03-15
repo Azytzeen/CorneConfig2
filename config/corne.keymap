@@ -25,6 +25,32 @@
         };
     };
 
+    behaviors {
+        HMRR: HMRR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 24 12 25 13 1 2 14 26 27 15 3 16 28 4 5 17 17 36 38 29 37 39 40 41>;
+        };
+
+        HMRL: HMRL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMRL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <36 38 37 39 40 41 30 18 6 7 31 19 32 19 20 8 9 33 21 22 10 34 35 23 11>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,10 +63,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp F             &kp P            &kp B               &kp J    &kp L            &kp U              &kp Y    &kp QUESTION  &kp BSPC
-&kp ESCAPE  &kp A  &kp R  &mt LEFT_SHIFT S  &mt RIGHT_ALT T  &kp G               &kp M    &mt RIGHT_ALT N  &mt RIGHT_SHIFT E  &kp I    &kp O         &kp SEMICOLON
-&kp LSHFT   &kp Z  &kp X  &kp C             &kp D            &kp V               &kp K    &kp H            &kp COMMA          &kp DOT  &kp FSLH      &mt RIGHT_SHIFT SINGLE_QUOTE
-                          &kp LCTRL         &lt 2 BACKSPACE  &mt LEFT_GUI DEL    &kp RET  &lt 1 SPACE      &kp RALT
+&kp TAB     &kp Q  &kp W  &kp F               &kp P             &kp B               &kp J    &kp L              &kp U                &kp Y    &kp QUESTION  &kp BSPC
+&kp ESCAPE  &kp A  &kp R  &HMRL LEFT_SHIFT S  &HMRL LEFT_ALT T  &kp G               &kp M    &HMRR RIGHT_ALT N  &HMRR RIGHT_SHIFT E  &kp I    &kp O         &kp SEMICOLON
+&kp LSHFT   &kp Z  &kp X  &kp C               &kp D             &kp V               &kp K    &kp H              &kp COMMA            &kp DOT  &kp FSLH      &mt RIGHT_SHIFT SINGLE_QUOTE
+                          &kp LCTRL           &lt 2 BACKSPACE   &mt LEFT_GUI DEL    &kp RET  &lt 1 SPACE        &kp RALT
             >;
         };
 
