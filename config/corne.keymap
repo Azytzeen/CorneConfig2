@@ -63,9 +63,9 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp F               &kp P              &kp B               &kp J    &kp L              &kp U                &kp Y    &kp QUESTION  &kp BSPC
-&kp ESCAPE  &kp A  &kp R  &HMRL LEFT_SHIFT S  &HMRL RIGHT_ALT T  &kp G               &kp M    &HMRR RIGHT_ALT N  &HMRR RIGHT_SHIFT E  &kp I    &kp O         &kp SEMICOLON
-&kp LSHFT   &kp Z  &kp X  &kp C               &kp D              &kp V               &kp K    &kp H              &kp COMMA            &kp DOT  &kp FSLH      &mt RIGHT_SHIFT SINGLE_QUOTE
+&kp TAB     &kp Q  &kp W  &kp F               &kp P              &kp B               &kp J    &kp L              &kp U      &kp Y    &kp SEMICOLON     &kp BSPC
+&kp ESCAPE  &kp A  &kp R  &kp S               &kp T              &kp G               &kp M    &kp N              &kp E      &kp I    &kp O             &kp QUESTION
+&kp LSHFT   &kp Z  &kp X  &HMRL LEFT_SHIFT C  &HMRL RIGHT_ALT D  &kp V               &kp K    &HMRR RIGHT_ALT H  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE  &mt RIGHT_SHIFT SLASH
                           &kp LCTRL           &lt 2 BACKSPACE    &mt LEFT_GUI DEL    &kp RET  &lt 1 SPACE        &kp RALT
             >;
         };
@@ -95,10 +95,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp TAB    &kp F1    &kp F2       &kp F3         &kp F4   &kp F5       &copy            &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp C_VOLUME_UP    &kp BSPC
-&kp LCTRL  &kp F6    &kp F7       &kp F8         &kp F9   &kp F10      &paste           &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp C_VOLUME_DOWN  &kp PRINTSCREEN
-&kp LSHFT  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp F11      &kp C_AC_SEARCH  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp K_MUTE         &kp K_CALCULATOR
-                                  &kp LGUI       &trans   &kp SPACE    &kp RET          &kp LEFT_SHIFT  &kp NUMBER_0
+&kp TAB    &kp F1    &kp F2       &kp F3         &kp F4   &kp F5       &copy            &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9  &kp C_VOLUME_UP    &kp BSPC
+&kp LCTRL  &kp F6    &kp F7       &kp F8         &kp F9   &kp F10      &paste           &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6  &kp C_VOLUME_DOWN  &kp PRINTSCREEN
+&kp LSHFT  &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END  &kp F11      &kp C_AC_SEARCH  &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3  &kp K_MUTE         &kp K_CALCULATOR
+                                  &kp LGUI       &trans   &kp SPACE    &kp RET          &kp NUMBER_0  &kp RIGHT_SHIFT
             >;
         };
 
