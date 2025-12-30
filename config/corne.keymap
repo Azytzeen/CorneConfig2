@@ -103,11 +103,5 @@
                                   &kp LGUI       &trans   &kp SPACE    &kp RET          &kp NUMBER_0  &kp RIGHT_SHIFT
             >;
         };
-
-        extra_1 { status = "reserved"; };
-
-        extra_2 { status = "reserved"; };
-
-        extra_3 { status = "reserved"; };
     };
 };
